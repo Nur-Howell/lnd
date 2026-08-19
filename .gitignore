@@ -1,0 +1,27 @@
+
+# Bash and shell history
+.bash_history
+.bash_sessions/
+.zsh_history
+.sh_history
+*.sh_history
+
+# Shell temporary files
+*.swp
+*.swo
+*~
+.#*
+
+# Ubuntu/Linux desktop metadata
+.directory
+lost+found/
+
+# Runtime and process files
+*.pid
+*.sock
+*.log
+
+# Common local environment files
+.env
+.env.*
+!.env.example
