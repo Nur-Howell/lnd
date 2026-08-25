@@ -3,7 +3,7 @@
 ![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25)
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420)
 ![iproute2](https://img.shields.io/badge/iproute2-Networking-0078D4)
-![Version](https://img.shields.io/badge/Version-0.1-blue)
+![Version](https://img.shields.io/badge/Version-0.2-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 
 A lightweight Bash-based command-line tool for inspecting basic network information on Linux systems.
@@ -12,7 +12,7 @@ This project is being developed as part of my Platform Engineering learning road
 
 ## Current Status
 
-**Version:** v0.1
+**Version:** v0.2
 
 The project currently provides an interactive terminal menu for accessing network diagnostics.
 
@@ -26,13 +26,13 @@ The project currently provides an interactive terminal menu for accessing networ
 - IPv4 address information
 - IPv6 address information
 - Basic RX/TX network statistics
+- Routing information
 - Modular Bash scripting structure
 
 ### Planned
 
 The project will gradually be expanded with additional network diagnostics, including:
 
-- Routing information
 - Connectivity diagnostics
 - DNS diagnostics
 - Network service diagnostics
@@ -77,7 +77,8 @@ This will launch the program and the interactive terminal menu should appear:
 ```
 ======= Menu =======
 1. Interface Info
-2. Exit
+2. Route Info
+3. Exit
 
 Select an option:
 ```
@@ -95,11 +96,14 @@ Select an option:
 │   └── netdiag
 ├── docs
 │   ├── 2026-08-19.md
-│   └── 2026_08_20.md
+│   ├── 2026_08_20.md
+│   ├── 2026_08_23.md
+│   └── 2026_08_25.md
 └── src
     ├── main.sh
     ├── network
-    │   └── interfaces.sh
+    │   ├── interfaces.sh
+    │   └── routes.sh
     └── ui
         └── menu.sh
 

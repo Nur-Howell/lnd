@@ -29,14 +29,16 @@ while true; do
 echo ""
 echo "======= Menu ======="
 echo "1. Interface Info"
-echo "2. Exit"
+echo "2. Route Info"
+echo "3. Exit"
 echo ""
 echo -n "Select an option: "
 read selection
 echo ""
 case $selection in
     1 ) clear ; info_show ; press_enter ;;
-    2 ) clear ; exit ;;
+    2 ) clear ; display_info ; press_enter ;;
+    3 ) clear ; exit ;;
     0 ) clear ; exit ;;
     * ) clear ; incorrect_msg ; press_enter ;;
   esac
